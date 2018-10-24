@@ -1,0 +1,44 @@
+<div class="side-tool">
+	<ul>
+		<li>
+			<a class="fa fa-angle-up fa-lg" href="#"></a>
+		</li>
+		<li>
+			<div class="fa fa-music fa-lg" id="bgm_btn"><audio id="bgm"><source src="http://blog.dengwenfeng.com/music/1.mp3" /></audio></div>
+			<!--<div class="fa fa-music fa-lg" id="bgm"><audio id="music"><source src="http://music.163.com/song/media/outer/url?id=287749.mp3" /></audio></div>-->
+		</li>
+	</ul>
+</div>
+
+<script type="text/javascript">
+	var bgm_btn = document.getElementById('bgm_btn');
+	var bgm = document.getElementById('bgm');
+	bgm.volume = .3;
+	//切换音乐不中断
+	if (localStorage.getItem('bgm_time') != null) {
+		bgm.currentTime = localStorage.getItem('bgm_time');
+		//启动播放音乐
+		bgm.play();
+		bgm_btn.classList.add("fa-spin");
+	}	
+	//监听按钮
+	bgm_btn.onclick = function(){
+		if(bgm.paused){
+			bgm.play();
+			bgm_btn.classList.add('fa-spin');
+		}else{
+			localStorage.clear();
+			bgm.pause();
+		}
+	}
+	//轮询记录歌曲时间
+	setInterval(function(){
+		if(bgm.paused){
+			bgm_btn.classList.remove('fa-spin');
+		}
+		else{
+			localStorage.setItem('bgm_time', bgm.currentTime);
+		}
+	}, 100);
+</script>
+	

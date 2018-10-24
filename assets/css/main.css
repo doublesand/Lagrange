@@ -509,3 +509,59 @@ th, td {
 .fa-rss-square:hover {
 	color: #ff6600;
 }
+
+/*
+	side-tool
+*/
+.fa-music {
+	padding: 15px;
+	cursor: pointer;
+	-o-transition:.5s;
+		-ms-transition:.5s;
+		-moz-transition:.5s;
+		-webkit-transition:.5s;
+		transition: .5s;
+}
+
+.fa-angle-up {
+	padding: 15px;
+	padding-left: 17px;
+	-o-transition:.5s;
+		-ms-transition:.5s;
+		-moz-transition:.5s;
+		-webkit-transition:.5s;
+		transition: .5s;
+}
+
+.side-tool {
+	position: fixed;
+	bottom: 40px;
+	right: 40px;
+	z-index: 1040;
+}
+
+.side-tool a{
+	text-decoration: none;
+}
+
+.side-tool>ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+.side-tool>ul>li {
+	border: 1px solid #dcdcdc;
+	border-bottom: none;
+	background-color: #fff;
+	transition: .1s ease-in;
+}
+
+.side-tool>ul>li:last-child{
+	border-bottom: 1px solid #dcdcdc;;
+}
+
+@media (max-width: 60rem) {
+	.side-tool {
+		display: none;
+	}
+}
