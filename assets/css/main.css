@@ -566,3 +566,15 @@ th, td {
 		display: none;
 	}
 }
+
+@media (min-width: 1215px) {
+	#markdown-toc {
+		position: fixed;
+		right: calc(50% + 330px);
+		top: 80px;
+		width: 300px;
+		height: calc(60%);
+		overflow-x: hidden;
+		overflow-y: auto;
+	}
+}
