@@ -2,6 +2,8 @@
 layout: page
 title: Archives
 ---
+
+---
 <ul class="posts">
   {% for post in site.posts %}
 
