@@ -267,10 +267,6 @@ hr {
 }
 
 @media (max-width: 30em) {
-  .social-icons {
-    float: left;
-    padding-top: 0px;
-  }
   .menu-content {
     margin-bottom: 5px;
   }
