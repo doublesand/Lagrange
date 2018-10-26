@@ -605,3 +605,7 @@ figure table{
 figure td{
 	padding: 0;
 }
+
+figure pre{
+	padding: 5px;
+}
