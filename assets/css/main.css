@@ -592,3 +592,16 @@ th, td {
 ::-webkit-scrollbar-thumb:window-inactive {
     background: rgba(0,0,0,0.2);
 }
+
+/* highlight by liquid */
+figure{
+	margin: 0;
+}
+
+figure table{
+	margin-bottom: 0;
+}
+
+figure td{
+	padding: 0;
+}

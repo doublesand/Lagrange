@@ -11,6 +11,9 @@ image: cards.jpg
 
 As always, Jekyll offers support for GitHub Flavored Markdown, which allows you to format your posts using the [Markdown syntax](https://guides.github.com/features/mastering-markdown/). Examples of these text formatting features can be seen below. You can find this post in the `_posts` directory.
 
+1. TOC
+{:toc}
+
 ## Basic Formatting
 
 With Markdown, it is possible to emphasize words by making them *italicized*, using *astericks* or _underscores_, or making them **bold**, using **double astericks** or __double underscores__. Of course, you can combine those two formats, with both _**bold and italicized**_ text, using any combination of the above syntax. You can also add a strikethrough to text using a ~~double tilde~~.
@@ -26,17 +29,17 @@ Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet b
 
 Sometimes it is useful to have different levels of headings to structure your documents. Start lines with `#` to create headings. Multiple `##` in a row denote smaller heading size. The following demonstrate the full range of heading sizes:
 
-# Heading One (h1)
+<h1> Heading One (h1) </h1>
 
-## Heading Two (h2)
+<h2> Heading Two (h2) </h2>
 
-### Heading Three (h3)
+<h3> Heading Three (h3) </h3>
 
-#### Heading Four (h4)
+<h4> Heading Four (h4) </h4>
 
-##### Heading Five (h5)
+<h5> Heading Five (h5) </h5>
 
-###### Heading Six (h6)
+<h6> Heading Six (h6) </h6>
 
 ## Links
 
@@ -68,7 +71,7 @@ print_hi('Tom')
 #=> prints 'Hi, Tom' to STDOUT.
 ```
 
-{% highlight js %}
+{% highlight js linenos %}
 // Example can be run directly in your JavaScript console
 
 // Create a function that takes two arguments and returns the sum of those arguments
