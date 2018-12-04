@@ -1,8 +1,9 @@
-# Change to true for Disqus comments
+# Change 'comments' to true for Disqus comments
 disqus:
   comments: true
   disqus_shortname: 'doublesand'
 
+# If you are not using Google Analytics, please change 'google-ID' to an empty string
 google-ID: 'UA-119421917-1'
 
 menu:
