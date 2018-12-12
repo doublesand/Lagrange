@@ -7,9 +7,9 @@
         {% if listed_posts_urls contains mypost.url %}
         {% else %}
           <li style="text-align: center;">
-              <a href="{{ site.github.url }}{{ mypost.url }}">
+              <a href="{{ site.url }}{{site.baseurl}}{{ mypost.url }}">
                 {{ mypost.title }}
-                <!--<img src="{{ site.github.url }}/images/{{ mypost.image.teaser }}">-->
+                <!--<img src="{{ site.url }}{{site.baseurl}}/images/{{ mypost.image.teaser }}">-->
                 <!--<small>{{ mypost.date | date: "%B %-d, %Y" }}</small>-->
               </a>
           </li>
